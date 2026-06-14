@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml"
+           fx:controller="com.biblioteca.controller.LoginController"
+           style="-fx-background-color: #121212;">
+
+    <VBox alignment="CENTER"
+          spacing="15"
+          maxWidth="350"
+          style="-fx-background-color: #1E1E1E;
+                 -fx-background-radius: 20;
+                 -fx-padding: 30;">
+
+        <padding>
+            <Insets top="30" right="30" bottom="30" left="30"/>
+        </padding>
+
+        <Label text="SISTEMA DE BIBLIOTECA"
+               style="-fx-text-fill: white;
+                      -fx-font-size: 24;
+                      -fx-font-weight: bold;"/>
+
+        <Label text="Faça o seu login"
+               style="-fx-text-fill: #AAAAAA;
+                      -fx-font-size: 14;"/>
+
+        <TextField fx:id="txtUsername"
+                   promptText="Nome de Utilizador"
+                   prefHeight="40"
+                   style="-fx-background-color: #2A2A2A;
+                          -fx-text-fill: white;
+                          -fx-prompt-text-fill: gray;
+                          -fx-background-radius: 10;"/>
+
+        <PasswordField fx:id="txtPassword"
+                       promptText="Palavra-passe"
+                       prefHeight="40"
+                       style="-fx-background-color: #2A2A2A;
+                              -fx-text-fill: white;
+                              -fx-prompt-text-fill: gray;
+                              -fx-background-radius: 10;"/>
+
+        <Button text="ENTRAR"
+                onAction="#login"
+                prefWidth="250"
+                prefHeight="40"
+                style="-fx-background-color: #00CEC8;
+                       -fx-text-fill: white;
+                       -fx-font-weight: bold;
+                       -fx-font-size: 14;
+                       -fx-background-radius: 10;
+                       -fx-cursor: hand;"/>
+
+        <Label fx:id="lblMensagem"
+               text=""
+               style="-fx-text-fill: #FF6B6B;"/>
+
+    </VBox>
+
+</StackPane>

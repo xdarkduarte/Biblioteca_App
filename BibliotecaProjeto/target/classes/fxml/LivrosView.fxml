@@ -1,0 +1,13 @@
+<TableView fx:id="tblLivros">
+
+    <columns>
+
+        <TableColumn text="ISBN"/>
+        <TableColumn text="Título"/>
+        <TableColumn text="Autor"/>
+        <TableColumn text="Categoria"/>
+        <TableColumn text="Disponível"/>
+
+    </columns>
+
+</TableView>

@@ -1,0 +1,7 @@
+<VBox spacing="10">
+
+    <Label text="🔔 Notificações"/>
+
+    <ListView fx:id="listaNotificacoes"/>
+
+</VBox>

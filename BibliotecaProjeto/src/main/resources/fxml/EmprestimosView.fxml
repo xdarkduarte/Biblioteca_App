@@ -1,0 +1,9 @@
+<VBox spacing="10">
+
+    <DatePicker fx:id="dpDataDevolucao"/>
+
+    <Button text="Novo Empréstimo"/>
+
+    <TableView fx:id="tblEmprestimos"/>
+
+</VBox>
